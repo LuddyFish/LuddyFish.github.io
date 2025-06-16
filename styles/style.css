@@ -1,8 +1,10 @@
 :root {
     --primary-colour: rgb(0, 221, 255);
-    --priamry-text-colour: #000;
-    --secondary-text-colour: #333;
-    --background-colour: #ffe;
+    --priamry-text-colour: #F7F9F9;
+    --secondary-text-colour: #E0D0C1;
+    --link-text-colour: #00A676;
+    --alt-colour: #A76D60;
+    --background-colour: #2F2D2E;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 header {
-
+    text-indent: 20px;
 }
 
 nav {
@@ -23,6 +25,10 @@ footer {
 
 }
 
+a {
+    color: var(--link-text-colour)
+}
+
 #content {
     a {
         color: var(--priamry-text-colour);
@@ -30,5 +36,17 @@ footer {
     }
     :hover {
 
+    }
+}
+
+#games {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 40px 10px;
+    justify-content: center;
+    grid-column-end: 2;
+    img {
+        height: 250px;
+        width: 340px;
     }
 }
