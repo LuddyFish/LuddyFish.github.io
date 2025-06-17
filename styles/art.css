@@ -1,0 +1,40 @@
+.gallery {
+    max-width: 100%;
+    padding: 0 5vw;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    .sub-collection {
+        display: flex;
+    }
+}
+
+h2 {
+    font-size: 4em;
+}
+
+.tiny {
+    width: 100px;
+}
+
+.small {
+    width: 200px;
+    &.long { width: 300px;}
+}
+
+.medium {
+    width: 500px;
+    .long { width: 600px;}
+}
+
+.large {
+    width: 800px;
+}
+
+video {
+    width: 400px
+}
