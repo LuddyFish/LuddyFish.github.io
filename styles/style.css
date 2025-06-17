@@ -14,7 +14,11 @@ body {
 }
 
 header {
-    text-indent: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-indent: 80px;
 }
 
 nav {
@@ -41,12 +45,19 @@ a {
 
 #games {
     display: grid;
-    grid-template-columns: 400px 400px;
-    gap: 40px 10px;
+    grid-template-columns: 450px 450px;
+    gap: 100px 10px;
     justify-content: center;
     grid-column-end: 2;
+    margin: 50px;
     img {
-        height: 250px;
+        height: 300px;
+        width: 410px;
+    }
+    .text {
+        justify-self: center;
+    }
+    .description {
         width: 340px;
     }
 }
