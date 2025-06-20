@@ -1,0 +1,42 @@
+h2 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+#games {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 100px 10px;
+    justify-content: center;
+    grid-column-end: 2;
+    margin: 50px;
+    img {
+        height: 300px;
+        width: 410px;
+    }
+    .text {
+        justify-self: center;
+    }
+    .description {
+        width: 340px;
+    }
+}
+
+.go-play {
+    align-self: center;
+    float: right;
+    margin-top: 8px;
+    margin-right: 20px;;
+    padding: 12px 20px;
+    border: var(--alt-colour) solid 4px;
+    border-radius: 30px;
+    color: var(--link-text-colour);
+    background-color: var(--background-colour);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    &:hover {
+        color: var(--primary-text-colour);
+        background-color: var(--alt-colour);
+        border: var(--link-text-colour) solid 3px;
+    }
+}
