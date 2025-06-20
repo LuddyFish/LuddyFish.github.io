@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       itemSelector: ".artpiece",
       columnWidth: ".artpiece",
       gutter: 10,
+      isFitWidth: true
     });
   });
 });
