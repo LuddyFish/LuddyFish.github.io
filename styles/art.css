@@ -4,37 +4,21 @@
 }
 
 .collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 50px;
-    .sub-collection {
-        display: flex;
+    margin-bottom: 2rem;
+}
+
+.artpiece {
+    width: 300px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    img {
+        width: 100%;
+    }
+    video {
+        width: 100%;
     }
 }
 
 h2 {
     font-size: 4em;
-}
-
-.tiny {
-    width: 100px;
-}
-
-.small {
-    width: 200px;
-    &.long { width: 300px;}
-}
-
-.medium {
-    width: 500px;
-    .long { width: 600px;}
-}
-
-.large {
-    width: 800px;
-}
-
-video {
-    width: 400px
 }

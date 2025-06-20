@@ -7,18 +7,14 @@
         <title>Art | Jack Luttrell</title>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/art.css">
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+        <script src="js/Masonry.js" defer></script>
     </head>
     <body>
         <main>
-            <!--    The default framework
-            <figure class="artpiece">
-                <img src="images/" alt="" class="">
-                <figcaption></figcaption>
-            </figure>
-            -->
             <div class="gallery">
                 <h2>3D Models</h2>
-                <div class="collection">
+                <div class="collection grid">
                     <figure class="artpiece">
                         <img src="images/3D-models/DK Barrel.png" alt="DK Barrel" class="small">
                         <figcaption></figcaption>
@@ -60,7 +56,7 @@
                     </figure>
                 </div>
                 <h2>Pixel Art</h2>
-                <div class="collection">
+                <div class="collection grid">
                     <figure class="artpiece">
                         <img src="images/pixel-art/Links.png" alt="Links" class="small long">
                         <figcaption></figcaption>
@@ -77,30 +73,26 @@
                         <img src="images/pixel-art/Max-Monkey.png" alt="Max the Monkey" class="medium">
                         <figcaption></figcaption>
                     </figure>
-                    <div id="stars" class="sub-collection">
-                        <figure class="artpiece">
-                            <img src="images/pixel-art/Full-Star Rating.png" alt="Full Star" class="tiny">
-                            <figcaption></figcaption>
+                    <figure class="artpiece">
+                        <img src="images/pixel-art/Full-Star Rating.png" alt="Full Star" class="tiny">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure class="artpiece">
+                        <img src="images/pixel-art/Half-Star Rating.png" alt="Half Star" class="tiny">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure class="artpiece">
+                        <img src="images/pixel-art/No-Star Rating.png" alt="No Star" class="tiny">
+                        <figcaption></figcaption>
                         </figure>
-                        <figure class="artpiece">
-                            <img src="images/pixel-art/Half-Star Rating.png" alt="Half Star" class="tiny">
-                            <figcaption></figcaption>
-                        </figure>
-                        <figure class="artpiece">
-                            <img src="images/pixel-art/No-Star Rating.png" alt="No Star" class="tiny">
-                            <figcaption></figcaption>
-                        </figure>
-                    </div>
-                    <div id="carrots" class="sub-collection">
-                        <figure class="artpiece">
-                            <img src="images/pixel-art/Carrot-standard.png" alt="Carrot" class="small">
-                            <figcaption></figcaption>
-                        </figure>
-                        <figure class="artpiece">
-                            <img src="images/pixel-art/Carrot Chop 12fps.gif" alt="Carrot Animation" class="small">
-                            <figcaption></figcaption>
-                        </figure>
-                    </div>
+                    <figure class="artpiece">
+                        <img src="images/pixel-art/Carrot-standard.png" alt="Carrot" class="small">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure class="artpiece">
+                        <img src="images/pixel-art/Carrot Chop 12fps.gif" alt="Carrot Animation" class="small">
+                        <figcaption></figcaption>
+                    </figure>
                     <figure class="artpiece">
                         <img src="images/pixel-art/Smiley_wave.gif" alt="Smiley Wave" class="small">
                         <figcaption></figcaption>
@@ -111,7 +103,7 @@
                     </figure>
                 </div>
                 <h2>Sketches</h2>
-                <div class="collection">
+                <div class="collection grid">
                     <figure class="artpiece">
                         <img src="images/screenshots/Dagda-continent-map.jpg" alt="Map of Dagda" class="large">
                         <figcaption></figcaption>
