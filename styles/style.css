@@ -38,13 +38,3 @@ footer {
 a {
     color: var(--link-text-colour)
 }
-
-#content {
-    a {
-        color: var(--primary-text-colour);
-        text-decoration: none;
-    }
-    :hover {
-
-    }
-}
