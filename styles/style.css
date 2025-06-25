@@ -35,6 +35,16 @@ footer {
 
 }
 
+h2 {
+    font-size: 30px;
+}
+
 a {
     color: var(--link-text-colour)
 }
+
+/* Unicodes */
+.phone::before { content: "\2706\a"; }
+.email::before { content: "\2709\a"; }
+.itch::before { content: "\270E\a"; }
+.github::before { content: "\a";}
