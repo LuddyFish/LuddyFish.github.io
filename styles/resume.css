@@ -9,6 +9,11 @@ h2 {
 p { 
     margin: 0 1vw; 
     padding-bottom: 5px;
+    img {
+        display: inline-block;
+        width: 16px;
+        vertical-align: middle;
+    }
 }
 
 ul {

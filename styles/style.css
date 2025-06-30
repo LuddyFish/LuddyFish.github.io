@@ -46,5 +46,3 @@ a {
 /* Unicodes */
 .phone::before { content: "\2706\a"; }
 .email::before { content: "\2709\a"; }
-.itch::before { content: "\270E\a"; }
-.github::before { content: "\a";}
