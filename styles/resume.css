@@ -20,6 +20,11 @@ ul {
     color: var(--secondary-text-colour);
 }
 
+.contact a {
+    color: var(--primary-text-colour);
+    text-decoration: none;
+}
+
 .education ul, .work ul {
     margin-top: 0;
     margin-left: 1vw;
