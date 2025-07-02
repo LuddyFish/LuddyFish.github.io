@@ -53,6 +53,7 @@ nav, footer {
     h3 {
         font-size: 40px;
         letter-spacing: 1px;
+        a:hover { background-color: transparent; }
     }
     #socials {
             font-size: 30px;
