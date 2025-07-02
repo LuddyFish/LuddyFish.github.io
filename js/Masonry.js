@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const grids = document.querySelectorAll('.collection, .sub-collection');
+const grids = document.querySelectorAll('.collection');
 
+document.addEventListener("DOMContentLoaded", () => {
   grids.forEach(grid => {
+    imagesLoaded(grid, () => {
     new Masonry(grid, {
       itemSelector: ".artpiece",
       columnWidth: ".artpiece",
-      gutter: 10,
+      gutter: ".gutter-sizer",
       isFitWidth: true
+      });
     });
   });
 });
