@@ -87,9 +87,3 @@ h2 {
         width: 300px;
     }
 }
-
-@media (max-width: 890px) {
-    .artpiece {
-        width: 400px;
-    }
-}
