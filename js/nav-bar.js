@@ -1,6 +1,7 @@
 const nav = document.getElementById("nav-bar");
 const hamburger = document.getElementById('hamburger');
 const sidebar = document.querySelector('.sidebar');
+const background = document.getElementById('nav-bg');
 let lastScrollY = window.scrollY;
 
 const mobileMaxWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--mobile-max-width'));
@@ -24,8 +25,12 @@ isMobileMedia.addEventListener('change', () => {
     sidebar.classList.remove('active');
 });
 
-hamburger.addEventListener('click', () => {
+function ToggleSideBar() {
     hamburger.classList.toggle('active');
     sidebar.classList.toggle('active');
     hamburger.innerHTML = hamburger.classList.contains('active') ? "&#10006;" : "&#9776;";
-});
+    background.classList.toggle('hidden');
+}
+
+hamburger.addEventListener('click', ToggleSideBar);
+background.addEventListener('click', ToggleSideBar);

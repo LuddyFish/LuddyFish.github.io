@@ -1,5 +1,5 @@
 const zoom = document.getElementById('zoomed-in');
-const background = document.querySelector('.highlight-bg')
+const background = document.getElementById('zoomed-bg')
 const img = zoom.querySelector('img');
 const video = zoom.querySelector('video');
 var media, cap;
