@@ -10,7 +10,7 @@ body {
     margin: 50px 20px 80px;
     img {
         width: 100%;
-        height: 700px;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         object-position: 0% 10%;
     }
@@ -39,31 +39,60 @@ body {
 
 #content {
     display: grid;
-    padding: 0;
-    grid-template-columns: 48% 48%;
-    gap: 4%;
+    padding: 0 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
     list-style-type: none;
     li {
-        width: 100%;
-        height: 460px;
+        display: flex;
+        position: relative;
+        aspect-ratio: 4 / 3;
         border-radius: 20px;
-        justify-self: center;
-        align-content: center;
-        text-align: center;
-        transition: 0.2s ease;
-        font-size: 48px;
-        font-weight: bold;
-        color: color-mix(in srgb, var(--background-colour) 0%, transparent );
-        &:hover { color: color-mix(in srgb, var(--background-colour) 100%, transparent) }
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
     }
     a {
-        color: var(--background-colour);
-        font-size: 24px;
-        text-decoration: none;
+        display: flex;
+        width: 100%;
+        height: 100%;
         border-radius: 20px;
-        background-size: 100% 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        text-decoration: none;
+        font-weight: bold;
+        color: color-mix(in srgb, var(--background-colour) 0%, transparent );
+        z-index: 2;
+        transition: 0.2s ease;
+        &:hover { 
+            color: color-mix(in srgb, var(--background-colour) 100%, transparent);
+            background-color: color-mix(in srgb, var(--primary-text-colour) 90%, transparent); 
+        }
     }
-    :hover {
-        background-color: color-mix(in srgb, var(--primary-text-colour) 90%, transparent);
+}
+
+@media (max-width: 1180px) {
+    #portfolio p {
+        margin: auto 10vw;
+    }
+}
+
+@media (max-width: 985px) {
+    #intro {
+        grid-template-columns: 90%;
+        justify-content: center;
+        #hello {
+            text-align: center;
+        }
+    }
+    #portfolio p {
+        margin: auto 5vw;
+    }
+    #content {
+        grid-template-columns: 1fr;
+        padding: 0 3vw;
     }
 }

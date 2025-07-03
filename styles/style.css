@@ -6,7 +6,7 @@
     --background-colour: #2F2D2E;
 
     --nav-height: 150px;
-    --mobile-max-width: 950px;
+    --mobile-max-width: 985px;
     --sidebar-width: 250px;
 }
 
@@ -166,7 +166,7 @@ a {
 .email::before { content: "\2709\a"; }
 
 
-@media (max-width: 950px) {
+@media (max-width: 985px) {
     nav {
         justify-content: center;
         #pages, #socials {
