@@ -147,6 +147,16 @@ a {
     display: none;
 }
 
+.highlight-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 10;
+}
+
 /* Unicodes */
 .phone::before { content: "\2706\a"; }
 .email::before { content: "\2709\a"; }

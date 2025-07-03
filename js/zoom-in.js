@@ -1,8 +1,8 @@
 const zoom = document.getElementById('zoomed-in');
-var media;
+const background = document.querySelector('.highlight-bg')
 const img = zoom.querySelector('img');
 const video = zoom.querySelector('video');
-var cap;
+var media, cap;
 
 const artpieces = document.querySelectorAll('.artpiece');
 artpieces.forEach(artpiece => {
@@ -19,13 +19,35 @@ artpieces.forEach(artpiece => {
             video.src = media.src;
             video.classList.remove('hidden');
             img.classList.add('hidden');
+            video.controls = media.classList.contains('control');
         }
         zoom.querySelector('figcaption').innerHTML = cap.innerHTML;
 
         zoom.classList.remove('hidden');
+        background.classList.remove('hidden');
+        PauseVideos(true);
     });
 });
 
-zoom.addEventListener('click', () => {
+function PauseVideos(pause) {
+    artpieces.forEach(artpiece => {
+        let media = artpiece.querySelector('video');
+        if (media) {
+            if (pause) {
+                media.pause();
+            } else {
+                media.play();
+            }
+        }
+    });
+}
+
+function CloseZoom() {
     zoom.classList.add('hidden');
-});
+    background.classList.add('hidden');
+    video.muted = true;
+    PauseVideos(false);
+}
+
+zoom.addEventListener('click', CloseZoom);
+background.addEventListener('click', CloseZoom);
