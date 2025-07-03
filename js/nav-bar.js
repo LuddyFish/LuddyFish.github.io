@@ -20,11 +20,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-isMobileMedia.addEventListener('change', () => {
-    nav.classList.remove('nav-hidden');
-    sidebar.classList.remove('active');
-});
-
 function ToggleSideBar() {
     hamburger.classList.toggle('active');
     sidebar.classList.toggle('active');
