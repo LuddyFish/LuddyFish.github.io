@@ -54,7 +54,7 @@ h2 {
     img, video {
         width: 90%;
         max-height: 80%;
-        height: 80%;
+        object-fit: contain;
     }
     figcaption {
         color: var(--primary-text-colour);
@@ -67,17 +67,6 @@ h2 {
     display: none;
 }
 
-@media (max-width: 1640px) {
-    .artpiece {
-        width: 300px;
-    }
-}
-
-@media (max-width: 1320px) {
-    .artpiece {
-        width: 400px;
-    }
-}
 
 @media (max-width: 1100px) {
     .artpiece {
