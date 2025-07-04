@@ -12,7 +12,7 @@ body {
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
-        object-position: 0% 10%;
+        object-position: 0% 20%;
     }
     #hello {
         margin: auto 20px;
