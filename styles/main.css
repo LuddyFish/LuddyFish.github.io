@@ -16,11 +16,12 @@ body {
     }
     #hello {
         margin: auto 20px;
+        padding-right: 20px;
         h2 {
             font-size: 70px;
         }
         h3 {
-            font-size: 38px;
+            font-size: 36px;
         }
     }
 }
@@ -85,6 +86,7 @@ body {
         grid-template-columns: 90%;
         justify-content: center;
         #hello {
+            padding: auto 10px;
             text-align: center;
         }
     }
