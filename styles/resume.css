@@ -1,5 +1,8 @@
 main {
     margin: 0 3vw;
+    .container {
+        justify-self: center;
+    }
 }
 
 h2 {
