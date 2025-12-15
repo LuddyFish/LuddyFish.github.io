@@ -111,6 +111,12 @@ body {
         #hello {
             padding: auto 10px;
             text-align: center;
+            .contacts {
+                font-size: 16px;
+                img {
+                    width: 20px;
+                }
+            }
         }
     }
     #portfolio p {

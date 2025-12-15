@@ -2,6 +2,7 @@ main {
     margin: 0 3vw;
     .container {
         justify-self: center;
+        margin-bottom: 8vh;
     }
 }
 
