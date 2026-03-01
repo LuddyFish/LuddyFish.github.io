@@ -161,11 +161,6 @@ a {
     }
 }
 
-/* Unicodes */
-.phone::before { content: "\2706\a"; }
-.email::before { content: "\2709\a"; }
-
-
 @media (max-width: 985px) {
     nav {
         justify-content: center;
