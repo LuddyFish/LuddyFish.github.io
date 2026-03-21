@@ -32,7 +32,7 @@ header {
 
 nav, footer {
     display: flex;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: space-around;
     z-index: 10;
@@ -49,6 +49,12 @@ nav, footer {
     ul { 
         list-style-type: none; 
         display: flex;
+        &#pages {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            text-align: center;
+        }
     }
     h3 {
         font-size: 40px;
@@ -165,7 +171,7 @@ a {
     nav {
         justify-content: center;
         #pages, #socials {
-            display: none;
+            display: none !important;
         }
     }
 

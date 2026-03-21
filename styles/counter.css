@@ -1,0 +1,21 @@
+body {
+    background-image: var(--bs-gradient);
+}
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.mobile-card {
+    max-width: 768px;
+    height: calc(100vh - 0.5rem * 2) !important;
+}
+
+#reset .fa-arrow-rotate-left {
+    --fa-animation-direction: reverse;
+    --fa-animation-iteration-count: 1;
+    --fa-animation-duration: 0.75s;
+}
+
+#counter {
+    font-size: 40vh;
+}

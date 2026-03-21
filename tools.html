@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jack Luttrell">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack Luttrell</title>
+        <link rel="icon" href="images/pixel-art/jack-of-clubs.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/style.css"> 
+        <link rel="stylesheet" href="styles/projects.css">
+        <script src="js/nav-bar.js" defer></script>
+        <script src="https://kit.fontawesome.com/ed4e6815d0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="nav-bar">
+            <button id="hamburger" aria-label="Open menu">&#9776;</button>
+            <nav>
+                <ul id="pages">
+                    <li><a href="index">About</a></li>
+                    <li><a href="resume">Resume</a></li>
+                    <li><a href="personalprojects">Projects</a></li>
+                    <li><a href="art">Art</a></li>
+                    <li><a href="tools">Tools</a></li>
+                </ul>
+                <h3><a href="index">Jack Luttrell</a></h3>
+                <ul id="socials">
+                    <li><a class="logo" href="mailto:jack.c.luttrell@icloud.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="logo" href="https://github.com/LuddyFish"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="logo" href="https://www.linkedin.com/in/jack-luttrell-5719b3266/"><i class="fa-brands fa-square-linkedin"></i></a></li>
+                </ul>
+                <div class="sidebar">
+                    <ul id="sidebar-pages">
+                        <li><a href="index">About</a></li>
+                        <li><a href="resume">Resume</a></li>
+                        <li><a href="personalprojects">Projects</a></li>
+                        <li><a href="art">Art</a></li>
+                        <li><a href="tools">Tools</a></li>
+                    </ul>
+                    <ul id="sidebar-socials">
+                        <li><a class="logo" href="mailto:jack.c.luttrell@icloud.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a class="logo" href="https://github.com/LuddyFish"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="logo" href="https://www.linkedin.com/in/jack-luttrell-5719b3266/"><i class="fa-brands fa-square-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <section id="nav-bg" class="highlight-bg hidden"></section>
+            </nav>
+            <hr class="divider">
+        </header>
+        <main>
+            <div class="title">
+                <h1>Utility Tools</h1>
+            </div>
+            <div id="description">
+                This is a collection of small web apps that I've designed.
+            </div>
+            <div id="utility-apps" class="col-grouping">
+                <div class="tool">
+                    <div class="image">
+                        <a href="tools/counter"><img src="images/screenshots/Counter-UI.png" alt="Counter UI" class="utility-image"></a>
+                    </div>
+                    <div class="text right">
+                        <h2>Counter</h2>
+                        <p class="description">
+                            This is a simple counter that I was asked to make. The client wanted it as an app on their phone, but to save having to deal
+                            with getting things published on app stores, I just made it as a simple web app.
+                        </p>
+                        <p>
+                            <a href="tools/counter"><button type="button" class="show-me">Use</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
