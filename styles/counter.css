@@ -7,7 +7,8 @@ main {
 
 .mobile-card {
     max-width: 768px;
-    height: calc(100vh - 0.5rem * 2) !important;
+    width: calc(100vw - 8px * 2) !important;
+    height: calc(100vh - 8px * 2) !important;
 }
 
 #reset .fa-arrow-rotate-left {
@@ -18,4 +19,14 @@ main {
 
 #counter {
     font-size: 40vh;
+}
+
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}
+
+@media (max-width: 576px) {
+    #counter {
+        font-size: 35vh;
+    }
 }

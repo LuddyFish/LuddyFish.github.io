@@ -1,6 +1,7 @@
 const counters = document.querySelectorAll(".counter");
 let count = 0;
 const manualCount = document.getElementById("setCount");
+const manualButton = document.getElementById("manualCountSetter");
 
 const increment = () => changeCount(++count);
 const decrement = () => changeCount(--count);
@@ -21,8 +22,14 @@ document.addEventListener("click", (event) => {
 });
 
 function setCountManually() {
+    if (manualCount.value.length === 0) return;
     changeCount(manualCount.value);
     manualCount.value = "";
+    manualButton.disabled = true;
 }
+
+manualCount.addEventListener("input", () => {
+    manualButton.disabled = manualCount.value.length === 0;
+});
 
 document.addEventListener("DOMContentLoaded", reset());

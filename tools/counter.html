@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Jack Luttrell">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Jack Luttrell</title>
         <link rel="icon" href="images/pixel-art/jack-of-clubs.png" type="image/x-icon">
         <link rel="stylesheet" href="../styles/counter.css"> 
@@ -23,20 +23,20 @@
                 <div class="d-block text-center">
                     <div id="counter" class="counter">100</div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-3 text-center">
-                        <button id="decrement" class="btn btn-outline-danger px-4 py-2 fs-4" onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
+                <div class="row justify-content-center mb-4 mb-sm-3">
+                    <div class="col-5 col-sm-3 text-center">
+                        <button id="decrement" class="btn btn-outline-danger px-5 px-sm-4 py-3 py-sm-2 fs-4" onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
                     </div>
-                    <div class="col-3 text-center mb-3">
-                        <button id="increment" class="btn btn-outline-primary px-4 py-2 fs-4" onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                    <div class="col-5 col-sm-3 text-center">
+                        <button id="increment" class="btn btn-outline-primary px-5 px-sm-4 py-3 py-sm-2 fs-4" onclick="increment()"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="row justify-content-center gap-2">
-                    <div class="empty col-1"></div>
-                    <label for="setCount" class="col-2 text-end align-self-center">Count:</label>
-                    <input type="number" name="setCount" id="setCount" class="col-2">
-                    <button class="col-1 btn btn-outline-secondary" onclick="setCountManually()"><i class="fa-solid fa-check"></i></button>
-                    <div class="empty col-2"></div>
+                    <div class="empty d-none d-sm-block col-sm-1"></div>
+                    <label for="setCount" class="col-3 col-sm-2 text-end align-self-center">Count:</label>
+                    <input type="number" name="setCount" id="setCount" class="col-3 col-sm-2">
+                    <button id="manualCountSetter" class="col-2 col-sm-1 btn btn-outline-secondary" onclick="setCountManually()" disabled><i class="fa-solid fa-check"></i></button>
+                    <div class="empty col-1 col-sm-2"></div>
                 </form>
             </div>
         </main>
