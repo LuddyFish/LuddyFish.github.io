@@ -1,0 +1,37 @@
+:root {
+    /* light */
+    --bg-color-l: var(--bs-bg-light);
+    --text-color-l: var(--bs-text-black);
+    --body-color-l: var(--bs-bg-body-secondary);
+
+    /* dark */
+    --bg-color-d: var(--bs-bg-dark);
+    --text-color-d: var(--bs-text-white);
+    --body-color-d: var(--bs-bg-body-black);
+}
+
+/* Apply light mode colors */
+[data-bs-theme="light"] body {
+    background-color: var(--body-color-l) !important;
+    color: var(--text-color-l) !important;
+}
+
+[data-bs-theme="light"]  .card {
+    background-color: var(--bg-color-l) !important;
+    color: var(--text-color-l) !important;
+}
+
+/* Apply dark mode colors */
+[data-bs-theme="dark"] body {
+    background-color: var(--body-color-d) !important;
+    color: var(--text-color-d) !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--bg-color-d) !important;
+    color: var(--text-color-d) !important;
+}
+
+.fa-sun, .fa-moon {
+    --fa-animation-duration: 0.5s;
+}

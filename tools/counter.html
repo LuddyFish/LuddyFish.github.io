@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Jack Luttrell">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>Jack Luttrell</title>
-        <link rel="icon" href="images/pixel-art/jack-of-clubs.png" type="image/x-icon">
+        <title>Counter</title>
+        <link rel="icon" href="../images/pixel-art/Full-Star Rating.png" type="image/x-icon">
         <link rel="stylesheet" href="../styles/counter.css"> 
+        <link rel="stylesheet" href="../styles/light-dark-mode.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/ed4e6815d0.js" crossorigin="anonymous"></script> 
         <script src="../js/counter.js" defer></script>
         <script src="../js/fontawesome.js" defer></script>
+        <script src="../js/light-dark-mode.js" defer></script>
         <link rel="stylesheet" href="">
     </head>
-    <body class="bg-body-secondary">
+    <body class="bg-body-secondary bg-gradient">
         <main>
-            <div class="card bg-white m-2 mobile-card mx-auto">
+            <div class="card bg-white m-2 mobile-card mx-auto no-gradient">
                 <div class="d-flex justify-content-between">
                     <button id="return" class="btn fs-3" onclick="goToHome()"><i class="fa-solid fa-circle-arrow-left"></i></button>
                     <button id="reset" class="btn fs-3" onclick="reset(), addSpin(this, true, 750)"><i class="fa-solid fa-arrow-rotate-left"></i></button>
                 </div>
                 <div class="d-block text-center">
-                    <div id="counter" class="counter">100</div>
+                    <div id="counter" class="counter text-truncate">100</div>
                 </div>
                 <div class="row justify-content-center mb-4 mb-sm-3">
                     <div class="col-5 col-sm-3 text-center">
-                        <button id="decrement" class="btn btn-outline-danger px-5 px-sm-4 py-3 py-sm-2 fs-4" onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
+                        <button id="decrement" class="btn btn-outline-danger px-5 px-sm-4 py-3 py-sm-2 fs-4 disable-dbl-tap-zoom" onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
                     </div>
                     <div class="col-5 col-sm-3 text-center">
-                        <button id="increment" class="btn btn-outline-primary px-5 px-sm-4 py-3 py-sm-2 fs-4" onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                        <button id="increment" class="btn btn-outline-primary px-5 px-sm-4 py-3 py-sm-2 fs-4 disable-dbl-tap-zoom" onclick="increment()"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="row justify-content-center gap-2">
@@ -38,6 +40,10 @@
                     <button id="manualCountSetter" class="col-2 col-sm-1 btn btn-outline-secondary" onclick="setCountManually()" disabled><i class="fa-solid fa-check"></i></button>
                     <div class="empty col-1 col-sm-2"></div>
                 </form>
+                <div class="d-flex justify-content-end">
+                    <button id="light-mode-btn" class="btn fs-4" onclick="toggleTheme()"><i class="fa-regular fa-sun"></i></button>
+                    <button id="dark-mode-btn" class="d-none btn fs-4" onclick="toggleTheme()"><i class="fa-regular fa-moon"></i></button>
+                </div>
             </div>
         </main>
     </body>
