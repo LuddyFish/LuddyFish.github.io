@@ -15,7 +15,7 @@ main {
 }
 
 #counter {
-    font-size: 200px;
+    font-size: minmax(150px, 200px);
 }
 
 .disable-dbl-tap-zoom {

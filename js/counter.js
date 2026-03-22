@@ -16,7 +16,9 @@ function changeCount(value) {
     count = value;
     counter.innerHTML = count.toString();
 
-    counter.style.fontsize = count.toString().length > 2 ? "30vw" : "40vw";
+    counter.style.fontSize = count.toString().length > 2 ? "130px" : "200px";
+    counter.style.paddingTop = count.toString().length > 2 ? "40px" : "0";
+    counter.style.paddingBottom = count.toString().length > 2 ? "40px" : "0";
 }
 
 document.addEventListener("click", (event) => {
