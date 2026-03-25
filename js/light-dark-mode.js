@@ -9,14 +9,15 @@ function toggleTheme() {
 }
 
 function updateButtons(theme) {
-    const sunBtn = document.getElementById('light-mode-btn');
-    const moonBtn = document.getElementById('dark-mode-btn');
+    const toggle = document.querySelector('.toggle-container');
+    const light = toggle.querySelectorAll('.fa-toggle-off, .fa-sun');
+    const dark = toggle.querySelectorAll('.fa-toggle-on, .fa-moon');
     if (theme === 'dark') {
-        sunBtn.classList.add('d-none');
-        moonBtn.classList.remove('d-none');
+        light.forEach(l => l.classList.add('d-none'));
+        dark.forEach(d => d.classList.remove('d-none'));
     } else {
-        sunBtn.classList.remove('d-none');
-        moonBtn.classList.add('d-none');
+        light.forEach(l => l.classList.remove('d-none'));
+        dark.forEach(d => d.classList.add('d-none'));
     }
 }
 

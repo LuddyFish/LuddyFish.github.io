@@ -17,7 +17,7 @@
     </head>
     <body class="bg-body-secondary bg-gradient">
         <main>
-            <div class="card m-2 mobile-card">
+            <div class="card m-2 pb-2 mobile-card justify-content-between">
                 <div class="d-flex justify-content-between">
                     <button id="return" class="btn fs-3" onclick="goToHome()"><i class="fa-solid fa-circle-arrow-left"></i></button>
                     <button id="reset" class="btn fs-3" onclick="reset(), addSpin(this, true, 750)"><i class="fa-solid fa-arrow-rotate-left"></i></button>
@@ -41,8 +41,12 @@
                     <div class="empty col-1 col-sm-2"></div>
                 </form>
                 <div class="d-flex justify-content-end">
-                    <button id="light-mode-btn" class="btn fs-4" onclick="toggleTheme()"><i class="fa-regular fa-sun"></i></button>
-                    <button id="dark-mode-btn" class="d-none btn fs-4" onclick="toggleTheme()"><i class="fa-regular fa-moon"></i></button>
+                    <button class="btn toggle-container fs-4" onclick="toggleTheme()">
+                        <i class="fa-solid fa-toggle-off fa-lg"></i>
+                        <i class="fa-solid fa-toggle-on fa-lg"></i>
+                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
                 </div>
             </div>
         </main>

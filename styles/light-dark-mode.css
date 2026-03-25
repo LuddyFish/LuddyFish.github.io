@@ -19,6 +19,7 @@ body {
     background-color: var(--bg-color) !important;
 }
 
-.fa-sun, .fa-moon {
-    --fa-animation-duration: 0.5s;
+.toggle-icon-on,
+.toggle-icon-off {
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }

@@ -2,6 +2,10 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.card {
+    justify-self: center;
+}
+
 .mobile-card {
     max-width: 768px;
     width: calc(100vw - 8px * 2) !important;

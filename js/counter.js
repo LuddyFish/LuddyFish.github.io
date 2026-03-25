@@ -4,7 +4,7 @@ const manualCount = document.getElementById("setCount");
 const manualButton = document.getElementById("manualCountSetter");
 
 function goToHome() {
-    window.location.href = window.location.origin;
+    window.location.href = window.location.origin + "/tools";
 }
 
 // Counting
